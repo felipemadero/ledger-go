@@ -1,4 +1,4 @@
-module github.com/zondax/ledger-go
+module github.com/felipemadero/ledger-go
 
 go 1.21
 
