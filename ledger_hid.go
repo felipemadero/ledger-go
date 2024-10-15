@@ -118,6 +118,8 @@ func newDevice(dev *hid.Device) *LedgerDeviceHID {
 }
 
 func (admin *LedgerAdminHID) Connect(requiredIndex int) (LedgerDevice, error) {
+	admin.ListDevices()
+
 	devices := hid.Enumerate(VendorLedger, 0)
 
 	currentIndex := 0
