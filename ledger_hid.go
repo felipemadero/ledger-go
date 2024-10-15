@@ -81,6 +81,7 @@ func logDeviceInfo(d hid.DeviceInfo) {
 	log.Printf("Product       : %s\n", d.Product)
 	log.Printf("UsagePage     : %x\n", d.UsagePage)
 	log.Printf("Usage         : %x\n", d.Usage)
+	log.Printf("Interface     : %x\n", d.Interface)
 	log.Printf("\n")
 }
 
